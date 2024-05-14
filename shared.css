@@ -1,0 +1,114 @@
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("fonts/productsans.ttf");
+}
+
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url("fonts/productsansbold.ttf");
+
+ }
+
+
+
+body {
+	font-family: "Product Sans";
+	background-color: lightcyan;
+
+}
+
+
+
+#main {
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#footer {
+	margin-top: 25px;
+	background-color: lightyellow;
+	text-align: center;
+	margin-bottom: 25px;
+	border: 1px solid black;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 10px;	
+
+}
+
+
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: 1px solid black;
+	width: 100%;
+	font-family: "Product Sans";
+	font-weight: bold;
+	background-color: pink;
+}
+
+#menu, #menu ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#menu li {
+	background-color: lightyellow;
+	border: solid rgb(0,0,0, 0.5) 1px;
+	width: 100%;
+	text-align: center;
+	/*position: relative;*/
+	font-family: "Product Sans", sans-serif;
+	border-radius: 10px;
+}
+
+#menu {
+	display: flex;
+	justify-content: center;
+	/*position: absolute;*/
+	
+
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+#menu li:hover {
+	background-color: lavender;
+}
+
+#menu a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+}
+
+#menu ul {
+	position: absolute;
+	display: none;
+}
+
+
+#menu ul ul {
+	left: 150px;
+	top: 0px;
+}
+
+#menu li:hover > ul {
+	display: block;
+}
+
+#active-page {
+	border-radius: 10px;
+	background-color: lavender;
+}
